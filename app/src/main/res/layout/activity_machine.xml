@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFF5"
+    tools:context=".Mainpage.MachineActivity">
+
+    <com.example.mentalwarning.Widget.TitleLayout
+        android:id="@+id/machine_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/machine_rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@id/machine_ll_1"
+        android:layout_below="@id/machine_tit"/>
+
+    <LinearLayout
+        android:id="@+id/machine_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FDF9FC"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/machine_add"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/machine_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/send_background"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/machine_et_con"
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:background="@null"
+                android:hint="请输入您的问题"
+                android:paddingLeft="10dp"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/machine_btn_send"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:text="发送"
+                android:textSize="14sp"
+                android:background="@drawable/send_machine"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

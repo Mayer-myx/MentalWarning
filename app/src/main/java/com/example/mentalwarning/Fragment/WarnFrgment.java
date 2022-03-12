@@ -8,24 +8,25 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.mentalwarning.databinding.FragmentAdviseBinding;
+import com.example.mentalwarning.databinding.FragmentWarnBinding;
+
 
 /**
  * @author Diredre
  * @brief description
  * @date 2022-03-05
  */
-public class AdviseFragment extends Fragment {
+public class WarnFrgment extends Fragment {
 
-    private static String TAG = "AdviseFragment";
+    private static String TAG = "WarnFrgment";
 
-    private FragmentAdviseBinding binding;
+    private FragmentWarnBinding binding;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentAdviseBinding.inflate(inflater, container, false);
+        binding = FragmentWarnBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         initView();

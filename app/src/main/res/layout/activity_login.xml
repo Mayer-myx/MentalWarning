@@ -71,7 +71,7 @@
                     android:layout_width="1dp"
                     android:layout_height="15dp"
                     android:layout_marginTop="17dp"
-                    android:background="#000000"/>
+                    android:background="#D2D2D4"/>
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="25dp"
@@ -81,6 +81,7 @@
                     android:layout_weight="1"
                     android:background="@null"
                     android:hint="请输入账号"
+                    android:textColorHint="#C2C2C4"
                     android:inputType="number"
                     android:maxLines="1"
                     android:gravity="left|bottom"
@@ -90,7 +91,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#000000"
+                android:background="#EDEAED"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"/>
 
@@ -109,7 +110,7 @@
                     android:layout_width="1dp"
                     android:layout_height="15dp"
                     android:layout_marginTop="17dp"
-                    android:background="#000000"/>
+                    android:background="#D2D2D4"/>
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="25dp"
@@ -120,6 +121,7 @@
                     android:background="@null"
                     android:inputType="textPassword"
                     android:hint="请输入密码"
+                    android:textColorHint="#C2C2C4"
                     android:maxLines="1"
                     android:gravity="left|bottom"
                     android:textSize="14sp"/>
@@ -132,10 +134,14 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/login_btn_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/gradient_blue_bg"
                 android:text="登 录"
+                android:textColor="@color/white"
                 android:textSize="16sp"
+                android:translationZ="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"/>
@@ -143,29 +149,31 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="登录代表你已经同意"
+                    android:textColor="#69686B"
                     android:textSize="10sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="《用户协议》"
-                    android:textColor="#000000"
+                    android:textColor="#5688DB"
                     android:textSize="10sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#69686B"
                     android:text="和"
                     android:textSize="10sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="《隐私权政策》"
-                    android:textColor="#000000"
+                    android:textColor="#5688DB"
                     android:textSize="10sp"/>
             </LinearLayout>
         </LinearLayout>
@@ -175,7 +183,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="———— 其他登录方式 ————"
+        android:text="——\t其他登录方式\t——"
+        android:textColor="#ABAAAF"
         android:textSize="12sp"
         android:layout_above="@id/login_ll_ways"
         android:layout_marginBottom="15dp"/>
@@ -202,6 +211,7 @@
                 android:layout_height="wrap_content"
                 android:text="微信"
                 android:textSize="11sp"
+                android:textColor="#A3A4AA"
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -219,36 +229,40 @@
                 android:layout_height="wrap_content"
                 android:text="支付宝"
                 android:textSize="11sp"
+                android:textColor="#A3A4AA"
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
+
+    <View
         android:id="@+id/login_ll_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="登录遇到问题？"
-            android:textSize="12sp"/>
-        <View
-            android:layout_width="1dp"
-            android:layout_height="15dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="#000000"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="验证码登录"
-            android:textColor="#000000"
-            android:textSize="12sp"/>
-    </LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#C2C3CA"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/login_ll_bottom"
+        android:layout_toLeftOf="@id/login_ll_bottom"
+        android:layout_marginRight="5dp"
+        android:text="登录遇到问题？"
+        android:textColor="#5D8DCD"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/login_ll_bottom"
+        android:layout_toRightOf="@id/login_ll_bottom"
+        android:layout_marginLeft="10dp"
+        android:text="验证码登录"
+        android:textColor="#5D8DCD"
+        android:textSize="12sp"/>
 </RelativeLayout>

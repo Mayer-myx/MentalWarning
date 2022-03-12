@@ -5,11 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8FA"
     tools:context=".MainActivity">
 
     <com.next.easynavigation.view.EasyNavigationBar
         android:id="@+id/main_enb_bottom"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:translationZ="-15dp"
+        app:Easy_centerNormalTextColor="#CFCCCF"
+        app:Easy_centerSelectTextColor="#1664FF"/>
 
 </RelativeLayout>
