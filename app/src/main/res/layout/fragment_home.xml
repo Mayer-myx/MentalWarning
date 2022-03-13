@@ -15,6 +15,7 @@
             android:paddingBottom="50dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/homefg_cd_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardElevation="2dp"
@@ -92,6 +93,7 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                     <ImageView
+                        android:id="@+id/homefg_iv_test"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_margin="10dp"
@@ -194,12 +196,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"/>
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:id="@+id/item_class_tv_recom1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:padding="5dp"
                             android:text="有料有趣"
                             android:textColor="#fff"
@@ -270,12 +271,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:adjustViewBounds="true"
-                            android:scaleType="fitCenter"/>
+                            android:scaleType="fitXY"/>
                         <TextView
                             android:id="@+id/item_class_tv_recom2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:padding="5dp"
                             android:text="名师课堂"
                             android:textColor="#fff"

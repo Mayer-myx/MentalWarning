@@ -1,11 +1,13 @@
 package com.example.mentalwarning.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.mentalwarning.Class.ClassAdapter;
 import com.example.mentalwarning.Class.ClassBean;
+import com.example.mentalwarning.Class.SearchActivity;
 import com.example.mentalwarning.Mainpage.ImageAdapter;
 import com.example.mentalwarning.Mainpage.ImageBean;
 import com.example.mentalwarning.databinding.FragmentClassBinding;
@@ -40,6 +43,7 @@ public class ClassFragment extends Fragment {
 
     private RecyclerView classfg_rv_class;
     private ClassAdapter classAdapter;
+    private CardView classfg_cd_search;
     private List<ClassBean> classBeanList = new ArrayList<>();
 
 
@@ -80,6 +84,11 @@ public class ClassFragment extends Fragment {
                 "心理瑜伽运动", "晨跑锻炼，长期见效，重在坚持。"));
         classAdapter = new ClassAdapter(getActivity(), classBeanList);
         classfg_rv_class.setAdapter(classAdapter);
+
+        classfg_cd_search = binding.classfgCdSearch;
+        classfg_cd_search.setOnClickListener(v->{
+            startActivity(new Intent(getActivity(), SearchActivity.class));
+        });
     }
 
 

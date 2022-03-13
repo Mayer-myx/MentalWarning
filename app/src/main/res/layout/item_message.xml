@@ -33,21 +33,20 @@
     </LinearLayout>
 
 
-
     <LinearLayout
-        android:id="@+id/it_tv_m"
+        android:id="@+id/it_mes_m_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
         android:paddingTop="10dp"
         android:orientation="horizontal">
         <LinearLayout
-            android:id="@+id/it_mes_m_layout"
             android:layout_width="wrap_content"
             android:layout_height="50sp"
             android:layout_gravity="right"
             android:background="@drawable/my_send">
             <TextView
+                android:id="@+id/it_tv_m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

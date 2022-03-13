@@ -9,17 +9,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.mentalwarning.Class.SearchActivity;
 import com.example.mentalwarning.Mainpage.ImageAdapter;
 import com.example.mentalwarning.Mainpage.ImageBean;
 import com.example.mentalwarning.Mainpage.MachineActivity;
 import com.example.mentalwarning.Mainpage.TeachAdapter;
 import com.example.mentalwarning.Mainpage.TeachBean;
+import com.example.mentalwarning.Mainpage.TestActivity;
 import com.example.mentalwarning.databinding.FragmentHomeBinding;
 import com.youth.banner.Banner;
 import com.youth.banner.indicator.CircleIndicator;
@@ -41,8 +44,9 @@ public class HomeFragment extends Fragment implements OnBannerListener, View.OnC
     private FragmentHomeBinding binding;
     private Banner homefg_banner;
     private RecyclerView homefg_rv_teach;
-    private ImageView homefg_iv_fm1, homefg_iv_fm2, homefg_iv_machine;
+    private ImageView homefg_iv_fm1, homefg_iv_fm2, homefg_iv_machine, homefg_iv_test;
     private TeachAdapter teachAdapter;
+    private CardView homefg_cd_search;
     private List<ImageBean> imgList = new ArrayList<>();
     private List<TeachBean> teachBeanList = new ArrayList<>();
 
@@ -95,6 +99,12 @@ public class HomeFragment extends Fragment implements OnBannerListener, View.OnC
 
         homefg_iv_machine = binding.homefgIvMachine;
         homefg_iv_machine.setOnClickListener(this);
+
+        homefg_cd_search = binding.homefgCdSearch;
+        homefg_cd_search.setOnClickListener(this);
+
+        homefg_iv_test = binding.homefgIvTest;
+        homefg_iv_test.setOnClickListener(this);
     }
 
     @Override
@@ -113,6 +123,12 @@ public class HomeFragment extends Fragment implements OnBannerListener, View.OnC
         switch (v.getId()){
             case R.id.homefg_iv_machine:
                 startActivity(new Intent(getActivity(), MachineActivity.class));
+                break;
+            case R.id.homefg_cd_search:
+                startActivity(new Intent(getActivity(), SearchActivity.class));
+                break;
+            case R.id.homefg_iv_test:
+                startActivity(new Intent(getActivity(), TestActivity.class));
                 break;
         }
     }

@@ -15,6 +15,7 @@
             android:paddingBottom="50dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/classfg_cd_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardElevation="2dp"

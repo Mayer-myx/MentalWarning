@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_inf_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:paddingTop="12dp">
+
+    <com.example.mentalwarning.Widget.RoundImageView
+        android:id="@+id/item_inf_riv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"/>
+
+    <View
+        android:id="@+id/item_inf_view"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/oval_red"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/item_inf_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_toLeftOf="@id/item_inf_tv_time"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            tools:text="新西兰克马德克群岛发生5.7级地震 震源深度10千米" />
+
+        <TextView
+            android:id="@+id/item_inf_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="19:22"
+            android:textColor="#9f9f9f"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/item_inf_tv_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_inf_tv_name"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginTop="4dp"
+            android:textColor="#9f9f9f"
+            android:textSize="12sp"
+            tools:text="地震快讯#中国地震台网正式测定：12月04日08时08分在克马德克群岛（南纬32.82度，西经178.73度）发生5.7级地震，震源深度10千米。" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,27 +1,27 @@
-package com.example.mentalwarning.Class;
+package com.example.mentalwarning.Mainpage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.mentalwarning.R;
-import com.example.mentalwarning.databinding.ActivitySearchBinding;
+import com.example.mentalwarning.Widget.TitleLayout;
+import com.example.mentalwarning.databinding.ActivityTestBinding;
 
-public class SearchActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
-    private ActivitySearchBinding binding;
+    private ActivityTestBinding binding;
 
-    private TextView search_tv_cancel;
+    private TitleLayout test_tit;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
 
@@ -32,15 +32,15 @@ public class SearchActivity extends AppCompatActivity {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//设置状态栏黑色字
         }
 
-        setContentView(R.layout.activity_search);
+
+        binding = ActivityTestBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         initView();
     }
 
     private void initView(){
-        search_tv_cancel = binding.searchTvCancel;
-        search_tv_cancel.setOnClickListener(v->{
-            this.finish();
-        });
+        test_tit = binding.testTit;
+        test_tit.setTitle("心理测试");
     }
 }

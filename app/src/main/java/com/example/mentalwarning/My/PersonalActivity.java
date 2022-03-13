@@ -1,20 +1,22 @@
-package com.example.mentalwarning.Class;
+package com.example.mentalwarning.My;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.mentalwarning.R;
-import com.example.mentalwarning.databinding.ActivitySearchBinding;
+import com.example.mentalwarning.R;
+import com.example.mentalwarning.Widget.TitleLayout;
+import com.example.mentalwarning.databinding.ActivityPersonalBinding;
 
-public class SearchActivity extends AppCompatActivity {
 
-    private ActivitySearchBinding binding;
+public class PersonalActivity extends AppCompatActivity {
 
-    private TextView search_tv_cancel;
+    private ActivityPersonalBinding binding;
+
+    private TitleLayout per_tit;
 
 
     @Override
@@ -32,15 +34,15 @@ public class SearchActivity extends AppCompatActivity {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//设置状态栏黑色字
         }
 
-        setContentView(R.layout.activity_search);
+        binding = ActivityPersonalBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         initView();
     }
 
     private void initView(){
-        search_tv_cancel = binding.searchTvCancel;
-        search_tv_cancel.setOnClickListener(v->{
-            this.finish();
-        });
+        per_tit = binding.perTit;
+        per_tit.setTitle("个人资料");
+
     }
 }
