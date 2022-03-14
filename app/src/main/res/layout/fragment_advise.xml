@@ -8,6 +8,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -130,8 +131,424 @@
                 </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#1664FE"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心理教练咨询"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部专家  >"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#575659"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="推荐"
+                    android:textSize="15sp"
+                    android:textColor="#1664FE"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="性心理"
+                    android:textSize="15sp"
+                    android:textColor="#575659"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="成长"
+                    android:textSize="15sp"
+                    android:textColor="#575659"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="恋爱心理"
+                    android:textSize="15sp"
+                    android:textColor="#575659"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="婚姻家庭"
+                    android:textSize="15sp"
+                    android:textColor="#575659"
+                    android:layout_alignParentBottom="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="亲子关系"
+                    android:textSize="15sp"
+                    android:textColor="#575659"
+                    android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="27dp"
+                android:background="#1664FE"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <com.example.mentalwarning.Widget.RoundImageView
+                    android:id="@+id/advisefg_riv1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/me"/>
+                <TextView
+                    android:id="@+id/advisefg_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="杨凤池"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/advisefg_riv1"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6000人次咨询 · 从业10年"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_tv1"
+                    android:layout_alignBottom="@id/advisefg_tv1"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国家二级心理咨询师/注册系统注册心理师"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv1"
+                    android:layout_below="@id/advisefg_tv1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="#E7F0FF"
+                    android:text="个人成长 | 人际关系 | 心理健康"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv1"
+                    android:layout_below="@id/advisefg_tv1_1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/clock"
+                    android:layout_toRightOf="@id/advisefg_riv1"
+                    android:layout_below="@id/advisefg_tv1_2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最快可约今天09:00"
+                    android:textColor="#053886"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/advisefg_riv1"
+                    android:layout_below="@id/advisefg_tv1_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="￥1000"
+                    android:textColor="#FF5722"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/locate"
+                    android:layout_alignBottom="@id/advisefg_tv1_2"
+                    android:layout_toLeftOf="@id/advisefg_tv1_3"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="杭州市"
+                    android:textColor="#D0CDD0"
+                    android:textSize="12sp"
+                    android:layout_alignBottom="@id/advisefg_tv1_2"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <com.example.mentalwarning.Widget.RoundImageView
+                    android:id="@+id/advisefg_riv2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/me"/>
+                <TextView
+                    android:id="@+id/advisefg_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高华"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/advisefg_riv2"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4500人次咨询 · 从业8年"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_tv2"
+                    android:layout_alignBottom="@id/advisefg_tv2"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国家二级心理咨询师/注册系统注册心理师"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv2"
+                    android:layout_below="@id/advisefg_tv2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="#E7F0FF"
+                    android:text="逆反心理 | 婚姻关系 | 抑郁症"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv2"
+                    android:layout_below="@id/advisefg_tv2_1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/clock"
+                    android:layout_toRightOf="@id/advisefg_riv2"
+                    android:layout_below="@id/advisefg_tv2_2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最快可约今天14:00"
+                    android:textColor="#053886"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/advisefg_riv2"
+                    android:layout_below="@id/advisefg_tv2_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="￥750"
+                    android:textColor="#FF5722"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/locate"
+                    android:layout_alignBottom="@id/advisefg_tv2_2"
+                    android:layout_toLeftOf="@id/advisefg_tv2_3"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="杭州市"
+                    android:textColor="#D0CDD0"
+                    android:textSize="12sp"
+                    android:layout_alignBottom="@id/advisefg_tv2_2"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <com.example.mentalwarning.Widget.RoundImageView
+                    android:id="@+id/advisefg_riv3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/me"/>
+                <TextView
+                    android:id="@+id/advisefg_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="古月胡"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@id/advisefg_riv3"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000人次咨询 · 从业3年"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_tv3"
+                    android:layout_alignBottom="@id/advisefg_tv3"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="国家二级心理咨询师/注册系统注册心理师"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv3"
+                    android:layout_below="@id/advisefg_tv3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="#E7F0FF"
+                    android:text="个人成长 | 强迫症 | 心理健康"
+                    android:textColor="#053886"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/advisefg_riv3"
+                    android:layout_below="@id/advisefg_tv3_1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/clock"
+                    android:layout_toRightOf="@id/advisefg_riv3"
+                    android:layout_below="@id/advisefg_tv3_2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最快可约今天10:00"
+                    android:textColor="#053886"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/advisefg_riv3"
+                    android:layout_below="@id/advisefg_tv3_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="￥200"
+                    android:textColor="#FF5722"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/locate"
+                    android:layout_alignBottom="@id/advisefg_tv3_2"
+                    android:layout_toLeftOf="@id/advisefg_tv3_3"/>
+
+                <TextView
+                    android:id="@+id/advisefg_tv3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="杭州市"
+                    android:textColor="#D0CDD0"
+                    android:textSize="12sp"
+                    android:layout_alignBottom="@id/advisefg_tv3_2"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

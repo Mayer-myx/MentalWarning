@@ -69,6 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:text="精选课程"
+                    android:textStyle="bold"
                     android:textSize="16sp"
                     android:textColor="#000"/>
                 <TextView

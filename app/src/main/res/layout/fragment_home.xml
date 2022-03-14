@@ -163,6 +163,7 @@
                     android:text="免费课程"
                     android:textSize="16sp"
                     android:textColor="#000"
+                    android:textStyle="bold"
                     android:layout_alignParentBottom="true"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -340,6 +341,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:text="咨询师推荐"
+                android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#000"/>
 

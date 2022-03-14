@@ -10,9 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.example.mentalwarning.Class.SearchActivity;
 import com.example.mentalwarning.Mainpage.ImageAdapter;
 import com.example.mentalwarning.Mainpage.ImageBean;
+import com.example.mentalwarning.Widget.RoundImageView;
 import com.example.mentalwarning.databinding.FragmentAdviseBinding;
 import com.youth.banner.Banner;
 import com.youth.banner.indicator.CircleIndicator;
@@ -34,6 +36,8 @@ public class AdviseFragment extends Fragment {
     private Banner advisefg_banner;
     private CardView advisefg_cd_search;
     private List<ImageBean> imgList = new ArrayList<>();
+
+    private RoundImageView advisefg_riv1, advisefg_riv2, advisefg_riv3;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -61,6 +65,20 @@ public class AdviseFragment extends Fragment {
             startActivity(new Intent(getActivity(), SearchActivity.class));
         });
 
+        advisefg_riv1 = binding.advisefgRiv1;
+        Glide.with(getActivity())
+                .load("https://s1.ax1x.com/2022/03/13/bb5L11.png")
+                .into(advisefg_riv1);
+
+        advisefg_riv2 = binding.advisefgRiv2;
+        Glide.with(getActivity())
+                .load("https://s1.ax1x.com/2022/03/13/bbIl3n.png")
+                .into(advisefg_riv2);
+
+        advisefg_riv3 = binding.advisefgRiv3;
+        Glide.with(getActivity())
+                .load("https://s1.ax1x.com/2022/03/13/bbftWq.png")
+                .into(advisefg_riv3);
     }
 
 
