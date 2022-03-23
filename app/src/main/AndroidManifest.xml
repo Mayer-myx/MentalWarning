@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalWarning"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Mainpage.TestActivity"></activity>
+        <activity android:name=".Advise.DoctorActivity"></activity>
+        <activity android:name=".Class.DetailActivity" />
+        <activity android:name=".Mainpage.ShequActivity" />
+        <activity android:name=".Mainpage.TestActivity" />
         <activity android:name=".My.InformActivity" />
         <activity android:name=".My.HelpActivity" />
         <activity android:name=".My.PersonalActivity" />

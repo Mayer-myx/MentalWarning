@@ -52,4 +52,7 @@ dependencies {
 
     // 轮播图
     implementation 'com.youth.banner:banner:2.1.0'
+    
+    // 图表
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
